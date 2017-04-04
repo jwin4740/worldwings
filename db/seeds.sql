@@ -1,6 +1,6 @@
-INSERT INTO ormwings (name) VALUES ('Meeses');
-INSERT INTO ormwings (name) VALUES ('Bobbi');
-INSERT INTO ormwings (name, sleepy) VALUES ('Sylvester', true);
-INSERT INTO ormwings (name, sleepy) VALUES ('Marilyn Manson', true);
-INSERT INTO ormwings (name, sleepy) VALUES ('Joe Biden', true);
-INSERT INTO ormwings (name) VALUES ('Owens');
+INSERT INTO ormwings (wing_flavor) VALUES ('tangy');
+INSERT INTO ormwings (wing_flavor) VALUES ('hot');
+INSERT INTO ormwings (wing_flavor, devoured) VALUES ('carribean', true);
+INSERT INTO ormwings (wing_flavor, devoured) VALUES ('kung pao', true);
+INSERT INTO ormwings (wing_flavor, devoured) VALUES ('insane', true);
+INSERT INTO ormwings (wing_flavor) VALUES ('weak sauce');

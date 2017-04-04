@@ -3,18 +3,18 @@ var orm = require("../config/orm.js");
 
 var wings = {
   all: function(cb) {
-    orm.all("ormwing", function(res) {
+    orm.all("ormwings", function(res) {
       cb(res);
     });
   },
   // The variables cols and vals are arrays.
   create: function(cols, vals, cb) {
-    orm.create("ormwing", cols, vals, function(res) {
+    orm.create("ormwings", cols, vals, function(res) {
       cb(res);
     });
   },
   update: function(objColVals, condition, cb) {
-    orm.update("ormwing", objColVals, condition, function(res) {
+    orm.update("ormwings", objColVals, condition, function(res) {
       cb(res);
     });
   }
