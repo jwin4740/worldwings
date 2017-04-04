@@ -1,22 +1,10 @@
-<!DOCTYPE html>
-<div class="container">
-	<h1> World Wings </h1>
-	<div class="row">
-		<div class="col-lg-12">
-			<div id="mainAction">
-				<h3> Enter some wing flavors</h3>
-				<input id="userInput">
-			</div>
-		</div>
-	</div>
-</div>
 
-
+<h1 id="mainHeader"> World Wings </h1>
 
 <h2>Wings that are not eaten!</h2>
 
 <ul>
-  {{#each wings}}
+  {{#each wingObj}}
     {{#unless this.devoured}}
       <li>
         {{this.wing_flavor}}
@@ -35,7 +23,7 @@
 <h2>Wings that are eaten!</h2>
 
 <ul>
-  {{#each wings}}
+  {{#each wingObj}}
     {{#if this.devoured}}
       <li>
         {{this.wing_flavor}}
@@ -67,3 +55,4 @@
 
   <button type="submit">Add Flavor</button>
 </form>
+
