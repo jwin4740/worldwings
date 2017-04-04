@@ -1,27 +1,21 @@
 {
-  "name": "worldwings",
+  "name": "mvc_design",
   "version": "1.0.0",
-  "description": "buffalo wings of the world",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jwin4740/worldwings.git"
-  },
-  "author": "James J Winkle",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jwin4740/worldwings/issues"
-  },
-  "homepage": "https://github.com/jwin4740/worldwings#readme",
   "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
-    "express-handlebars": "^3.0.0",
-    "method-override": "^2.3.7",
-    "mysql": "^2.13.0"
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "express-handlebars": "^2.0.1",
+    "method-override": "^2.3.5",
+    "mysql": "^2.10.2"
+  },
+  "devDependencies": {
+    "handlebars-helper-css": "^0.1.0"
   }
 }

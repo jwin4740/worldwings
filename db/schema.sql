@@ -1,12 +1,12 @@
 ### Schema
 
-CREATE DATABASE ww_db;
-USE ww_db;
+CREATE DATABASE ww2_db;
+USE ww2_db;
 
-CREATE TABLE ormwings
+CREATE TABLE wings
 (
-	id INTEGER NOT NULL AUTO_INCREMENT,
-	wing_flavor varchar(255) NOT NULL,
-	devoured BOOLEAN DEFAULT false,
+	id int NOT NULL AUTO_INCREMENT,
+	name varchar(255) NOT NULL,
+	hungry BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
