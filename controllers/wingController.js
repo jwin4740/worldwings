@@ -2,14 +2,14 @@ var express = require("express");
 
 var router = express.Router();
 
-// Import the model (cat.js) to use its database functions.
-var cat = require("../models/wing.js");
+// Import the model (wing.js) to use its database functions.
+var wing = require("../models/wing.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
-  cat.all(function(data) {
+  wing.all(function(data) {
     var hbsObject = {
-      cats: data
+      wings: data
     };
     console.log(hbsObject);
     res.render("index", hbsObject);
@@ -17,7 +17,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
-  cat.create([
+  wing.create([
     "name", "hungry"
   ], [
     req.body.name, req.body.hungry
@@ -31,7 +31,7 @@ router.put("/:id", function(req, res) {
 
   console.log("condition", condition);
 
-  cat.update({
+  wing.update({
     hungry: req.body.hungry
   }, condition, function() {
     res.redirect("/");
@@ -41,7 +41,7 @@ router.put("/:id", function(req, res) {
 router.delete("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  cat.delete(condition, function() {
+  wing.delete(condition, function() {
     res.redirect("/");
   });
 });
