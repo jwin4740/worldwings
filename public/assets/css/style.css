@@ -3,16 +3,33 @@
   margin-right: 10%;
 }*/
 
-.pane{
-background-color: black;
-height: 100em;
+.pane {
+  background-color: black;
+  height: 710px;
 }
-.mainSection{
+
+.mainSection {
   float: left;
   border: solid 2px black;
   width: 47%;
   padding: 10px;
   margin-left: 15px;
+}
+
+#mainHeader {
+  font-family: 'Indie Flower', cursive;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.sect {
+  background-image: url(../images/back2.jpg);
+  background-size: cover;
+  height: 710px;
+}
+
+hr {
+  border-color: black;
 }
 
 li {
@@ -25,7 +42,7 @@ li {
   font-size: 20px;
 }
 
-button{
+button {
   font-size: 12px;
   width: 60px;
   background-color: black;
@@ -34,10 +51,11 @@ button{
   border-radius: 3px;
 }
 
-.eatList{
+.eatList {
   background-color: lawngreen;
 }
-.eatenList{
+
+.eatenList {
   background-color: orange;
 }
 
@@ -46,20 +64,23 @@ button{
 }
 
 .create-update-form {
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
   background: aqua;
 }
 
 .form-group {
   margin-bottom: 5px;
+  padding: 5px;
 }
 
-ul{
+ul {
   list-style: none;
-
 }
 
-#addFlavor{
-  clear:both;
+#addFlavor {
+  clear: both;
+  margin-left: 11px;
+  margin-right: 31px;
+
 }
