@@ -1,4 +1,4 @@
-### Schema
+### Schema for my sql database
 
 CREATE DATABASE ww2_db;
 USE ww2_db;
