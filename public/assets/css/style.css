@@ -1,31 +1,110 @@
-/*.totusTuus{
-  margin-left: 10%;
-  margin-right: 10%;
-}*/
+.totusTuus {
+min-height: 600px;
+}
+
+body {
+  background-color: black;
+}
 
 .pane {
   background-color: black;
-  height: 710px;
+  height: 100%;
+  padding: 8px;
 }
 
-.mainSection {
-  float: left;
-  border: solid 2px black;
-  width: 47%;
-  padding: 10px;
-  margin-left: 15px;
+.scoville {
+  height: 90px;
+  width: 1095px;
 }
 
 #mainHeader {
   font-family: 'Indie Flower', cursive;
   font-size: 50px;
   font-weight: bolder;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.panel-default {
+  background-color: transparent;
+  border: solid 5px black;
+  position: relative;
+  z-index: 2;
+}
+
+.panel-default>.panel-heading {
+  background: linear-gradient(red, yellow);
+  font-family: 'Acme', sans-serif;
+  font-weight: bolder;
+  font-size: 45px;
+  border-bottom: none;
+  border-radius: 0px;
+}
+
+.panel-body {
+  background-color: transparent;
+  padding: 5px;
+}
+
+.pepper {
+  position: absolute;
+  top: 105px;
+  right: 50px;
+  height: 240px;
+  width: 525px;
+}
+
+#addFlavor {
+  width: 30%;
+  float: left;
+  margin-left: 10px;
+  margin-right: 31px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.flavorBody {
+  padding: 0px;
+}
+
+.capture {
+  clear: both;
+}
+
+.create-update-form {
+  margin: 5px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+  padding: 0px;
+}
+
+#submitFlavor {
+  float: right;
+  height: 52px;
+  font-weight: bolder;
+  width: 100px;
+}
+
+input {
+  border: solid 2px black;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.mainSection {
+  float: left;
+  width: 50%;
+  padding: 5px;
 }
 
 .sect {
   background-image: url(../images/back2.jpg);
   background-size: cover;
-  height: 710px;
+
+
 }
 
 hr {
@@ -35,8 +114,8 @@ hr {
 li {
   float: left;
   text-align: center;
-  padding: 10px 20px 10px 20px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
   border-radius: 3px;
   font-weight: bolder;
   font-size: 20px;
@@ -52,7 +131,7 @@ button {
 }
 
 .eatList {
-  background-color: lawngreen;
+  background-color: lightslategrey;
 }
 
 .eatenList {
@@ -63,24 +142,29 @@ button {
   font-weight: bold;
 }
 
-.create-update-form {
-  padding: 10px;
-  margin: 5px;
-  background: aqua;
-}
-
-.form-group {
-  margin-bottom: 5px;
-  padding: 5px;
-}
-
 ul {
   list-style: none;
 }
 
-#addFlavor {
-  clear: both;
-  margin-left: 11px;
-  margin-right: 31px;
+.actionButton {
+  float: left;
+  margin-left: 5px;
+}
 
+.landingFlavor {
+  font-weight: bolder;
+  margin: 0px;
+}
+
+#gifDiv {
+  position: absolute;
+  z-index: 0;
+  margin-left: 5px;
+  bottom: 20px;
+}
+
+.heat {
+  float: left;
+  height: 75px;
+  width: 154px;
 }
