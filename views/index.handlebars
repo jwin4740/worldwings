@@ -1,43 +1,11 @@
-<h1>Flavors!</h1>
 
-<h2>wings that are not hungry!</h2>
-
-<ul>
-  {{#each wings}}
-    {{#unless this.hungry}}
-      <li>
-        {{this.name}}
-
-        <form action="/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="hungry" value="true">
-          <button type="submit">Rest TIME!</button>
-        </form>
-
-        {{> wings/delete-wing}}
-      </li>
-    {{/unless}}
-  {{/each}}
-</ul>
-
-<h2>wings that are hungry!</h2>
-
-<ul>
-  {{#each wings}}
-    {{#if this.hungry}}
-      <li>
-        {{this.name}}
-
-        <form action="/{{this.id}}?_method=PUT" method="POST">
-          <input type="hidden" name="hungry" value="false">
-          <button type="submit">Dinner Time!</button>
-        </form>
-
-        {{> wings/delete-wing}}
-      </li>
-    {{/if}}
-  {{/each}}
-</ul>
-
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 pane">
+  
+</div>
+<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+  <div class="totusTuus">
+    <h1 id='mainHeader'>World Wings</h1>
+    <div id='addFlavor'>
 <h2>Add a Flavor</h2>
 <form class="create-update-form" action="/" method="POST">
 
@@ -54,3 +22,53 @@
 
   <button type="submit">Add Flavor</button>
 </form>
+</div>
+
+<div class='mainSection' id='eat'>
+<h2>wings that are not hungry!</h2>
+
+<ul>
+  {{#each wings}}
+    {{#unless this.hungry}}
+      <li class='eatList'>
+        {{this.name}}
+
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="hungry" value="true">
+          <button type="submit">stuffed</button>
+        </form>
+
+        {{> wings/delete-wing}}
+      </li>
+    {{/unless}}
+  {{/each}}
+</ul>
+</div>
+
+<div class='mainSection' id='eaten'>
+<h2>wings that are hungry!</h2>
+
+<ul>
+  {{#each wings}}
+    {{#if this.hungry}}
+      <li class='eatenList'>
+        {{this.name}}
+
+        <form action="/{{this.id}}?_method=PUT" method="POST">
+          <input type="hidden" name="hungry" value="false">
+          <button type="submit">hungry</button>
+        </form>
+
+        {{> wings/delete-wing}}
+      </li>
+    {{/if}}
+  {{/each}}
+</ul>
+</div>
+
+</div>
+</div>
+<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 pane">
+  
+</div>
+

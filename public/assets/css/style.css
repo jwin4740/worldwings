@@ -1,7 +1,44 @@
+/*.totusTuus{
+  margin-left: 10%;
+  margin-right: 10%;
+}*/
+
+.pane{
+background-color: black;
+height: 100em;
+}
+.mainSection{
+  float: left;
+  border: solid 2px black;
+  width: 47%;
+  padding: 10px;
+  margin-left: 15px;
+}
+
 li {
-  padding: 5px;
-  margin: 5px;
-  background: #faebd7;
+  float: left;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
+  margin: 10px;
+  border-radius: 3px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+button{
+  font-size: 12px;
+  width: 60px;
+  background-color: black;
+  color: white;
+  border: solid 3px red;
+  border-radius: 3px;
+}
+
+.eatList{
+  background-color: lawngreen;
+}
+.eatenList{
+  background-color: orange;
 }
 
 .label {
@@ -16,4 +53,13 @@ li {
 
 .form-group {
   margin-bottom: 5px;
+}
+
+ul{
+  list-style: none;
+
+}
+
+#addFlavor{
+  clear:both;
 }
